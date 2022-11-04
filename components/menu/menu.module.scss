@@ -1,0 +1,65 @@
+@import 'styles/variables.scss';
+
+.container {
+    height: 100%;
+    max-width: 15rem;
+    background-color: $secondary;
+    position: relative;
+}
+
+.containerDark {
+    height: 100%;
+    max-width: 15rem;
+    background-color: $white;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.item {
+    display: flex;
+    margin: 1rem 0;
+    color: $secondary-text;
+    font-weight: $font-weight-bold;
+    cursor: pointer;
+    font-size: $font-size-l;
+}
+
+.option {
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: $secondary-text;
+    margin: 0 1rem 0 0;
+}
+
+.listContainer {
+    margin: 0;
+    list-style-type: none;
+    padding: 3rem 0 0 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: $font-size-l;
+    color: $secondary-text;
+    font-weight: $font-weight-bold;
+    padding: 0 0 1rem 0;
+    cursor: pointer;
+}
+
+.setting {
+    padding: 0 0.5rem;
+}

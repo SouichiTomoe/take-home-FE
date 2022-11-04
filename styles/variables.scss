@@ -1,0 +1,49 @@
+$secondary: #e2eae8;
+$ternary: #005f61;
+$background-color: #d6d4d421;
+$primary-text: #000000ad;
+$secondary-text: #c2c2c2;
+$ternary-text: #006e7d;
+$warning: #ff0000b3;
+$white: #ffffff;
+
+$primary-card: #0591a3;
+$secondary-card: #498d84;
+$ternary-card: #4fccdb;
+
+$font-size-xs: 12px;
+$font-size-s: 14px;
+$font-size-normal: 16px;
+$font-size-l: 20px;
+$font-size-ls: 24px;
+$font-size-lls: 36px;
+$font-size-xl: 44px;
+
+$font-weight-normal: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+@mixin device($media) {
+    @if $media==iphone {
+        @media (min-width: 360px) and (max-width: 767px) {
+            @content;
+        }
+    }
+    @if $media==android {
+        @media (min-width: 360px) and (max-height: 640px) {
+            @content;
+        }
+    }
+
+    @if $media==tablet {
+        @media (min-width: 768px) and (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @if $media==desktop {
+        @media (min-width: 1025px) {
+            @content;
+        }
+    }
+}
